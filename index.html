@@ -1,9 +1,151 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Coffee Shop Demo</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KATEH | Persian Dining at The Avenues</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Welcome to My Coffee Shop</h1>
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="#home" class="logo">KATEH</a>
+      <button class="menu-toggle" aria-label="Open menu">☰</button>
+      <div class="nav-links">
+        <a href="#menu">Menu</a>
+        <a href="#experience">Experience</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#visit">Visit</a>
+        <a class="nav-cta" href="tel:+96596962819">Call Now</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow">Premium Persian Restaurant · The Avenues Mall</p>
+        <h1>Persian comfort, served with modern Kuwait elegance.</h1>
+        <p class="hero-text">Experience rich grilled meats, signature rice dishes, warm hospitality, and a refined dining atmosphere in the heart of The Avenues.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="https://wa.me/96596962819" target="_blank">Find a Table</a>
+          <a class="btn secondary" href="#menu">Explore Menu</a>
+        </div>
+        <div class="stats">
+          <div><strong>4.9</strong><span>Google Rating</span></div>
+          <div><strong>6,622+</strong><span>Reviews</span></div>
+          <div><strong>KWD 5–25</strong><span>Per Person</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="info-strip reveal">
+      <div><span>Open Today</span><strong>Closes 11:30 PM</strong></div>
+      <div><span>Service</span><strong>Dine-in · Takeaway · Delivery</strong></div>
+      <div><span>Location</span><strong>The Avenues, Kuwait City</strong></div>
+    </section>
+
+    <section id="menu" class="section menu-section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Menu Highlights</p>
+        <h2>Signature dishes guests keep coming back for.</h2>
+      </div>
+      <div class="menu-grid">
+        <article class="dish-card reveal">
+          <div class="dish-icon">🔥</div>
+          <h3>Sheesh Tawooq</h3>
+          <p>Tender marinated chicken grilled to perfection with fragrant spices and a bright finish.</p>
+        </article>
+        <article class="dish-card reveal">
+          <div class="dish-icon">🥘</div>
+          <h3>Tahchin</h3>
+          <p>A golden Persian rice classic with layered flavor, crisp edges, and a luxurious texture.</p>
+        </article>
+        <article class="dish-card reveal">
+          <div class="dish-icon">🍢</div>
+          <h3>Kebab</h3>
+          <p>Juicy grilled skewers prepared for deep flavor, balanced seasoning, and a smoky aroma.</p>
+        </article>
+        <article class="dish-card reveal">
+          <div class="dish-icon">🥒</div>
+          <h3>Tzatziki</h3>
+          <p>Cool, creamy, refreshing, and perfect beside grilled meats and warm bread.</p>
+        </article>
+        <article class="dish-card reveal">
+          <div class="dish-icon">🍛</div>
+          <h3>Thali</h3>
+          <p>A colorful plate built for variety, comfort, and a complete dining experience.</p>
+        </article>
+        <article class="dish-card reveal">
+          <div class="dish-icon">🍞</div>
+          <h3>Roti</h3>
+          <p>Soft, warm bread made for sharing, dipping, and completing every table.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience" class="section split-section">
+      <div class="split-image reveal"></div>
+      <div class="split-content reveal">
+        <p class="eyebrow">The Kateh Experience</p>
+        <h2>Made for family gatherings, elegant dinners, and unforgettable meals.</h2>
+        <p>From welcoming staff to beautifully plated Persian favorites, Kateh brings together comfort, taste, and atmosphere. Guests praise the excellent food, friendly team, and professional service.</p>
+        <ul class="features">
+          <li>Premium Persian-inspired dishes</li>
+          <li>Warm hospitality and helpful service</li>
+          <li>Located inside The Avenues Mall</li>
+          <li>Order online, takeaway, or dine in</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="reviews" class="section reviews-section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Guest Reviews</p>
+        <h2>Loved by thousands in Kuwait.</h2>
+      </div>
+      <div class="reviews-grid">
+        <article class="review-card reveal">
+          <div class="stars">★★★★★</div>
+          <p>“The meat is cooked well, the taste is excellent. Everyone was smiling and welcoming.”</p>
+          <h4>Khaled Kaddoura</h4>
+        </article>
+        <article class="review-card reveal">
+          <div class="stars">★★★★★</div>
+          <p>“The food was excellent. The atmosphere was nice and the wait staff were very accommodating.”</p>
+          <h4>Christina Angelica</h4>
+        </article>
+        <article class="review-card reveal">
+          <div class="stars">★★★★★</div>
+          <p>“Amazing experience, very tasty food, very professional and polite staff.”</p>
+          <h4>H Saddik</h4>
+        </article>
+      </div>
+    </section>
+
+    <section id="visit" class="section visit-section">
+      <div class="visit-card reveal">
+        <p class="eyebrow">Visit Us</p>
+        <h2>KATEH at The Avenues</h2>
+        <p>The Avenues Mall, Sheikh Zayed Bin Sultan Al Nahyan Rd, Kuwait City</p>
+        <div class="contact-list">
+          <a href="tel:+96596962819">📞 9696 2819</a>
+          <a href="https://wa.me/96596962819" target="_blank">💬 WhatsApp Reservation</a>
+          <a href="https://kateh-me.com" target="_blank">🌐 Order Online</a>
+        </div>
+        <a class="btn primary" target="_blank" href="https://www.google.com/maps/search/?api=1&query=KATEH+The+Avenues+Kuwait">Get Directions</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> KATEH. Premium Persian dining in Kuwait.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
