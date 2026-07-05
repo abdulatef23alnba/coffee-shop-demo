@@ -1,21 +1,25 @@
-const menuToggle = document.querySelector('.menu-toggle');
-const navLinks = document.querySelector('.nav-links');
+const menuToggle = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector(".nav-links");
 
-menuToggle.addEventListener('click', () => {
-  navLinks.classList.toggle('open');
+menuToggle.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
 });
 
-document.querySelectorAll('.nav-links a').forEach(link => {
-  link.addEventListener('click', () => navLinks.classList.remove('open'));
+document.querySelectorAll(".nav-links a").forEach(link => {
+  link.addEventListener("click", () => navLinks.classList.remove("active"));
 });
 
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) entry.target.classList.add('active');
+const revealElements = document.querySelectorAll(".reveal");
+
+const revealOnScroll = () => {
+  revealElements.forEach(el => {
+    const top = el.getBoundingClientRect().top;
+    if (top < window.innerHeight - 80) {
+      el.classList.add("visible");
+    }
   });
-}, { threshold: 0.15 });
+};
 
-document.querySelectorAll('.reveal').forEach(element => observer.observe(element));
-
-document.getElementById('year').textContent = new Date().getFullYear();
+window.addEventListener("scroll", revealOnScroll);
+window.addEventListener("load", revealOnScroll);
 
